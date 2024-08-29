@@ -1,18 +1,52 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #435DF8;
+    font-family: "Oswald", sans-serif;
+       
+}
+      
 
-h1{
-    text-align: center;
-    margin: 100px;
+h1 {
     color: #ffffff;
-    font-size: 50px;
-}
-
-body{
-    background-image: url("construction-1921518_1280.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    
+    font-size: 38px;
+    margin-bottom: 0;
     
 }
 
+p{
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 0;
+}
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Padrão: texto e imagem lado a lado */
+    align-items: center;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    gap: 20px; /* Espaçamento entre o texto e a imagem */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container img {
+    max-width: 100%; /* Ajusta a largura da imagem conforme o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Muda para coluna em dispositivos menores */
+        align-items: center;
+    }
+
+    .container img {
+        margin-top: 20px; /* Espaço entre o texto e a imagem quando a imagem está abaixo do texto */
+    }
+}
